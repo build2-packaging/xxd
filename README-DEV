@@ -1,0 +1,6 @@
+- While we could do the git submodule, dragging the whole of Vim for a few
+  rarely-changing files feels like an overkill. So we just copy them from:
+
+  https://github.com/vim/vim/tree/master/src/xxd
+
+  The man page (xxd.1) is taken from the most recent Debian package.
