@@ -467,6 +467,17 @@ main(int argc, char *argv[])
   char *pp;
   int addrlen = 9;
 
+  /* Handle --build2-metadata (see also buildfile). */
+  if (argc == 2 && strncmp (argv[1], "--build2-metadata=", 18) == 0)
+  {
+    printf ("# build2 buildfile xxd\n");
+    printf ("export.metadata = 1 xxd\n");
+    printf ("xxd.name = [string] xxd\n");
+    printf ("xxd.version = [string] '%s'\n", XXD_VERSION);
+    printf ("xxd.checksum = [string] '%s'\n", XXD_VERSION);
+    return 0;
+  }
+
 #ifdef AMIGA
   /* This program doesn't work when started from the Workbench */
   if (argc == 0)

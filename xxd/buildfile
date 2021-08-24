@@ -1,5 +1,18 @@
 ./: exe{xxd} doc{README.md} man1{xxd} manifest
 
+# Target metadata, see also --build2-metadata in xxd.c.
+#
+# Note that xxd does not query any environment variables.
+#
+exe{xxd}:
+{
+  export.metadata = 1 xxd
+  xxd.name = [string] xxd
+  xxd.version  = [string] $version
+  xxd.checksum = [string] $version
+}
+
 exe{xxd}: c{xxd} testscript
 
 c.poptions += ($c.target.class == 'windows' ? -DWIN32 : -DUNIX)
+c.poptions += "-DXXD_VERSION=\"$version\""
