@@ -4,3 +4,7 @@
   https://github.com/vim/vim/tree/master/src/xxd
 
   The man page (xxd.1) is taken from the most recent Debian package.
+
+- Note that upstream xxd --version prints the date of last change as its
+  version while Debian uses the Vim version for the package version. We
+  will follow Debian but will provide the date as upstream-version.
