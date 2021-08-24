@@ -1,0 +1,5 @@
+./: exe{xxd} doc{README.md} man1{xxd} manifest
+
+exe{xxd}: c{xxd} testscript
+
+c.poptions += ($c.target.class == 'windows' ? -DWIN32 : -DUNIX)
