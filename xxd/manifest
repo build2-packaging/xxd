@@ -1,6 +1,6 @@
 : 1
 name: xxd
-version: 8.2.3075
+version: 8.2.3075+1
 upstream-version: 20200204
 summary: Vim xxd hexdump utility
 license: X11 OR LGPL-2.0-only
@@ -10,5 +10,5 @@ package-url: https://github.com/build2-packaging/xxd
 package-email: boris@codesynthesis.com
 build-error-email: builds@build2.org
 requires: host
-depends: * build2 >= 0.14.0-
-depends: * bpkg >= 0.14.0-
+depends: * build2 >= 0.14.0
+depends: * bpkg >= 0.14.0

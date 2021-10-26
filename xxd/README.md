@@ -3,6 +3,8 @@
 Vim `xxd` creates a hexdump of a given file or standard input. It can also
 convert a hexdump back to its original binary form.
 
+Note that the `xxd` executable provides `build2` metadata.
+
 One notable `xxd` mode is `-i|--include` which generates a C array definition
 of the input that can be used to embed binary data into C/C++ programs. While
 the default output is a bit old school (using `unsigned int` instead of
