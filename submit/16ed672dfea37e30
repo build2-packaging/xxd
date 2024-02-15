@@ -1,0 +1,6 @@
+: 1
+name: xxd
+version: 8.2.3075+2
+upstream-version: 20200204
+summary: Vim xxd hexdump utility
+license: X11 OR LGPL-2.0-only
